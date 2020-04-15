@@ -1,0 +1,331 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* ------------整體設定------------ */
+*{
+  box-sizing: border-box;
+}
+body {
+  margin: 0 auto;
+  border: 1px solid #000;
+  width: 1920px;
+  /* height: 3047px; */
+  background: #ffffff;
+}
+.subtitle h2 {
+  font-family: PingFang TC;
+  font-size: 32px;
+  font-weight: 500;
+  line-height:45px;
+  margin-right: 16px;
+}
+.subtitle h3 {
+  font-family: Roboto;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 32px;
+}
+
+.content-list {
+  padding-left: 48px;
+  margin-bottom: 24px;
+}
+
+.content-list li {
+  position: relative;
+}
+
+.content-list li p {
+  font-family: PingFang TC;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 36px;
+}
+
+.content-list li .circle {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 8px;
+  top: 10px;
+  left: -32px;
+  background: #96A9C4;
+}
+
+.white {
+  color: white;
+}
+.no-margin-bottom {
+  margin-bottom: 0px;
+}
+
+/* -----new----- */
+.container{
+  width: 1200px;
+  margin: 0 auto;
+}
+.subtitle {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-bottom: 1px solid #000;
+  padding-bottom: 8px;
+  margin-bottom: 22px;
+}
+
+/* ----name 設定---- */
+.name {
+  padding-top: 48px;
+  padding-bottom: 24px;
+  border-bottom: 3px solid #000;
+  margin-bottom: 48px;
+}
+.name h1 {
+  font-family: Andale Mono;
+  font-size: 80px;
+  font-weight: 400;
+  line-height: 90px;
+}
+
+/* ----selfie設定---- */
+
+.selfie {
+  margin-bottom: 48px;
+}
+.selfie img {
+  width: 324px;
+  height: 324px;
+}
+
+/* ----profile 設定---- */
+
+.profile {
+  margin-bottom: 72px;
+}
+
+.profile-list {
+  height: 234px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.profile-list li {
+  font-size: 24px;
+  font-weight: 300;
+}
+
+/* ---- education 設定---- */
+.education {
+  margin-bottom: 72px;
+}
+.education .content-list {
+  padding-left: 24px;
+  
+  margin-left: 24px;
+}
+.education .content-list ul {
+  height: 104px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.education .content-list ul li {
+  position: relative;
+  margin-bottom: 32px;
+  font-size: 24px;
+  font-weight: 300;
+}
+
+/* 製作上方支柱 1 and 2*/
+.education .content-list ul li::before {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 100%;
+  background: #96A9C4;
+  /* 上推下 */
+  top: 50%;
+  left: -25px;
+}
+/* 消去被推擠至下方的支柱 2 */
+.education .content-list ul li:nth-last-child(1)::before {
+  height: 0;
+}
+/* 製作下方支柱 1 and 2*/
+.education .content-list ul li::after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 100%;
+  background: #96A9C4;
+  /* 下推上 */
+  bottom: 50%;
+  left: -25px;
+}
+/* 消去被推擠至上方的支柱 1 */
+.education .content-list ul li:nth-child(1)::after {
+  height: 0;
+}
+/* .line-length {
+  height: 100%;
+} */
+
+
+/* ---- skill 設定---- */
+
+.skill-wrap {
+  height: 494px;
+  position: relative;
+  margin-bottom: 72px;
+}
+.skill-banner {
+  height: 360px;
+  background: #96A9C4;
+  top: 67px;
+  position: relative;
+}
+
+.skill-banner .skill {
+  position: absolute;
+  /* height: 494px; */
+  top: -70px;
+  left: 50%;
+  background: #415165;
+  margin-left: -600px;
+  padding: 24px 102px 56px 102px;
+}
+.skill .subtitle {
+  border-bottom: 1px solid #fff;
+  justify-content: center;
+  margin-bottom: 40px;
+}  
+.skill-list {
+  width: 220px;
+  margin: 0 auto;
+  padding-left: 24px;
+  border-left: 1px solid #fff;
+  
+}
+.skill-list li {
+  font-family: 'Roboto';
+  font-weight: 100;
+  font-size: 24px;
+  line-height: 33px;
+  margin-top: 16px;
+  color: #fff;
+  
+}
+
+/* ---- 工作經驗設定---- */
+
+.work-list {
+  padding-left: 24px;
+  margin-left: 24px;
+  margin-bottom: 72px;
+  border-left: 1px solid #96A9C4;
+}
+.work-list ul li {
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: 500;
+  margin-bottom: 32px;
+}
+
+.work-list ul li img {
+  margin: 8px 0px;
+}
+
+.text {
+  width: 642px;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 300;
+}
+#hex-logo {
+  width: 89.5px;
+  height: 66.85px;
+}
+
+#simtree-logo {
+  width: 72px;
+  height: 73px;
+}
+
+
+
+/* ---- footer 設定---- */
+.footer-wrap {
+  width: 1920px;
+  background: #415165;
+  padding-top: 24px;
+  padding-bottom: 48px;
+}
+
+
+.footer .subtitle {
+  justify-content: center;
+  border-bottom: 1px solid #fff;
+}
+
+
+.social-media ul {
+  display: flex;
+  justify-content: center;
+}
+.footer .content-list ul{
+  text-align: center;
+}
+.social-media img {
+  width: 48px;
+  height: 48px;
+  display:block;
+  margin: 0px 12px;
+}
+
