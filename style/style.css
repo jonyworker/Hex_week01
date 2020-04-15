@@ -97,7 +97,9 @@ body {
   left: -32px;
   background: #96A9C4;
 }
-
+.dark-red{
+  color: #A00404;
+}
 .white {
   color: white;
 }
