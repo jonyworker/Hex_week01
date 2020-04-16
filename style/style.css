@@ -52,37 +52,44 @@ table {
   box-sizing: border-box;
 }
 body {
+  /* 加入共用字體，不設高寬*/
+  font-family: PingFang TC, sans-serif;
+}
+.container{
+  width: 1200px;
   margin: 0 auto;
-  border: 1px solid #000;
-  width: 1920px;
-  /* height: 3047px; */
-  background: #ffffff;
+}
+.subtitle {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-bottom: 1px solid #000;
+  padding-bottom: 8px;
+  margin-bottom: 22px;
 }
 .subtitle h2 {
-  font-family: PingFang TC;
   font-size: 32px;
   font-weight: 500;
-  line-height:45px;
-  margin-right: 16px;
+  line-height: 45px;
+  /* 使subtitle居中 */
+  display: flex;
 }
-.subtitle h3 {
-  font-family: Roboto;
+.subtitle span {
+  font-family: Roboto, sans-serif;
   font-size: 24px;
   font-weight: 500;
-  line-height: 32px;
+  line-height: 45px;
+  padding-left: 16px;
 }
 
 .content-list {
   padding-left: 48px;
   margin-bottom: 24px;
 }
-
 .content-list li {
   position: relative;
 }
-
 .content-list li p {
-  font-family: PingFang TC;
   font-size: 24px;
   font-weight: 300;
   line-height: 36px;
@@ -107,18 +114,6 @@ body {
   margin-bottom: 0px;
 }
 
-.container{
-  width: 1200px;
-  margin: 0 auto;
-}
-.subtitle {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  border-bottom: 1px solid #000;
-  padding-bottom: 8px;
-  margin-bottom: 22px;
-}
 
 /* ----name 設定---- */
 .name {
@@ -128,7 +123,7 @@ body {
   margin-bottom: 48px;
 }
 .name h1 {
-  font-family: Andale Mono;
+  font-family: Andale Mono, sans-serif;
   font-size: 80px;
   font-weight: 400;
   line-height: 90px;
@@ -303,7 +298,7 @@ body {
 
 /* ---- footer 設定---- */
 .footer-wrap {
-  width: 1920px;
+  /* width: 1920px; */
   background: #415165;
   padding-top: 24px;
   padding-bottom: 48px;
