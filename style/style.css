@@ -48,6 +48,7 @@ table {
 }
 
 /* ------------整體設定------------ */
+
 *{
   box-sizing: border-box;
 }
@@ -59,6 +60,7 @@ body {
   width: 1200px;
   margin: 0 auto;
 }
+
 .subtitle {
   display: flex;
   justify-content: flex-start;
@@ -94,7 +96,6 @@ body {
   font-weight: 300;
   line-height: 36px;
 }
-
 .content-list li .circle {
   position: absolute;
   width: 16px;
@@ -104,6 +105,7 @@ body {
   left: -32px;
   background: #96A9C4;
 }
+
 .dark-red{
   color: #A00404;
 }
@@ -114,8 +116,8 @@ body {
   margin-bottom: 0px;
 }
 
-
 /* ----name 設定---- */
+
 .name {
   padding-top: 48px;
   padding-bottom: 24px;
@@ -144,7 +146,6 @@ body {
 .profile {
   margin-bottom: 72px;
 }
-
 .profile-list {
   height: 234px;
   display: flex;
@@ -157,6 +158,7 @@ body {
 }
 
 /* ---- education 設定---- */
+
 .education {
   margin-bottom: 72px;
 }
@@ -171,7 +173,6 @@ body {
   flex-direction: column;
   justify-content: space-between;
 }
-
 .education .content-list ul li {
   position: relative;
   margin-bottom: 32px;
@@ -209,10 +210,6 @@ body {
 .education .content-list ul li:nth-child(1)::after {
   height: 0;
 }
-/* .line-length {
-  height: 100%;
-} */
-
 
 /* ---- skill 設定---- */
 
@@ -227,7 +224,6 @@ body {
   top: 67px;
   position: relative;
 }
-
 .skill-banner .skill {
   position: absolute;
   /* height: 494px; */
@@ -256,7 +252,6 @@ body {
   line-height: 33px;
   margin-top: 16px;
   color: #fff;
-  
 }
 
 /* ---- 工作經驗設定---- */
@@ -273,11 +268,9 @@ body {
   font-weight: 500;
   margin-bottom: 32px;
 }
-
 .work-list ul li img {
   margin: 8px 0px;
 }
-
 .text {
   width: 642px;
   font-size: 20px;
@@ -288,29 +281,23 @@ body {
   width: 89.5px;
   height: 66.85px;
 }
-
 #simtree-logo {
   width: 72px;
   height: 73px;
 }
 
-
-
 /* ---- footer 設定---- */
+
 .footer-wrap {
   /* width: 1920px; */
   background: #415165;
   padding-top: 24px;
   padding-bottom: 48px;
 }
-
-
 .footer .subtitle {
   justify-content: center;
   border-bottom: 1px solid #fff;
 }
-
-
 .social-media ul {
   display: flex;
   justify-content: center;
